@@ -15,8 +15,8 @@ The dimensionless 2D TM system is
 
 $$
 \begin{aligned}
-\frac{\partial E_z}{\partial t} &= \frac{\partial H_y}{\partial x} - \frac{\partial H_x}{\partial y} - \sin(\omega t)\,J_z, \\[4pt]
-\frac{\partial H_x}{\partial t} &= -\frac{\partial E_z}{\partial y}, \\[4pt]
+\frac{\partial E_z}{\partial t} &= \frac{\partial H_y}{\partial x} - \frac{\partial H_x}{\partial y} - \sin(\omega t)J_z, \\
+\frac{\partial H_x}{\partial t} &= -\frac{\partial E_z}{\partial y}, \\
 \frac{\partial H_y}{\partial t} &= \frac{\partial E_z}{\partial x},
 \end{aligned}
 $$
@@ -48,11 +48,11 @@ $$
 \frac{(H_x)_{i,j+\frac12}^{n+\frac12} - (H_x)_{i,j-\frac12}^{n+\frac12}}{\Delta y}
 -
 \sin\!\left(\omega t^{n+\frac12}\right)(J_z)_{i,j},
-\\[8pt]
+\
 \frac{(H_x)_{i,j+\frac12}^{n+\frac12} - (H_x)_{i,j+\frac12}^{n-\frac12}}{\Delta t}
 &=
 -\frac{(E_z)_{i,j+1}^{n} - (E_z)_{i,j}^{n}}{\Delta y},
-\\[8pt]
+\
 \frac{(H_y)_{i+\frac12,j}^{n+\frac12} - (H_y)_{i+\frac12,j}^{n-\frac12}}{\Delta t}
 &=
 \frac{(E_z)_{i+1,j}^{n} - (E_z)_{i,j}^{n}}{\Delta x}.
@@ -79,7 +79,7 @@ $$
 
 ---
 
-## Question 1 — Accuracy and Convergence
+## Accuracy and Convergence
 
 The manufactured source is
 
@@ -133,7 +133,7 @@ which should be close to $2$ once the mesh is fine enough.
 
 ---
 
-## Question 2 — Localized Gaussian Source
+## Localized Gaussian Source
 
 The second experiment uses the source
 
